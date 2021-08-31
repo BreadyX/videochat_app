@@ -1,0 +1,11 @@
+@use '@/scss/globals';
+
+.colored-button {
+  @include globals.button-override(green);
+  width: 100%;
+  margin-top: var(--space-l);
+}
+
+.form-element + .form-element {
+  margin-top: var(--space-m);
+}
