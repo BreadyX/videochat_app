@@ -1,0 +1,41 @@
+@use '@/scss/globals/colors';
+@use '@/scss/globals/typography';
+
+@forward '@/scss/globals/colors';
+
+:root {
+  --zero: 0;
+
+  // Rounded corners
+  --radius-dialog: 30px;
+  --radius-element: 10px;
+  --radius-subelement: 5px;
+
+  // Animations
+  --transition-speed: 0.2s;
+  --transition-speed-faster: calc(0.2s / 2);
+  --transition-speed-slower: calc(0.2s * 2);
+}
+
+.link-primary {
+  color: var(--color-link);
+  text-decoration: underline;
+  cursor: pointer;
+
+  &:active {
+    transform: translateY(2%);
+  }
+
+  &:hover {
+    color: var(--color-link-hover);
+  }
+}
+
+.link-secondary {
+  @extend .link-primary;
+  color: var(--color-text-secondary);
+
+  &:hover {
+    color: var(--color-text-secondary);
+  }
+}

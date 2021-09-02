@@ -1,0 +1,63 @@
+:root {
+  --color-bg: hsl(0, 0%, 97%);
+
+  --color-login-gradient-light: hsl(207, 60%, 95%);
+  --color-login-gradient-dark: hsl(207, 60%, 60%);
+
+  --color-accent: hsl(207, 98%, 32%);
+
+  --color-text-light: hsl(0, 0%, 97%);
+  --color-text-dark: hsl(240, 6%, 16%);
+  --color-text-secondary: hsl(0, 0%, 40%);
+  --color-text: var(--color-text-dark);
+
+  --color-shadow: hsla(0, 0%, 30%, 0.37);
+
+  --color-separator: hsl(0, 0%, 60%);
+  --color-container-border: hsl(0, 0%, 72%);
+
+  --color-link: hsl(207, 98%, 32%);
+  --color-link-hover: hsl(207, 98%, 34%);
+
+  --color-button-primary: hsl(207, 98%, 32%);
+  --color-button-primary-active: hsl(207, 98%, 30%);
+  --color-button-primary-hover: hsl(207, 98%, 34%);
+  --color-button-primary-text: var(--color-text-light);
+
+  --color-button-green: hsl(128, 57%, 32%);
+  --color-button-green-active: hsl(128, 57%, 30%);
+  --color-button-green-hover: hsl(128, 57%, 34%);
+  --color-button-green-text: var(--color-text-light);
+
+  --color-button-disabled: hsl(0, 0%, 86%);
+  --color-button-text-disabled: hsl(0, 0%, 35%);
+
+  --color-button: var(--color-button-primary);
+  --color-button-active: var(--color-button-primary-active);
+  --color-button-hover: var(--color-button-primary-hover);
+  --color-button-shadow: var(--color-shadow);
+  --color-button-text: var(--color-button-primary-text);
+
+  --color-input: var(--color-bg);
+  --color-input-hover: hsl(0, 0%, 98%);
+  --color-input-disabled: hsl(0, 0%, 86%);
+  --color-input-border: hsl(0, 0%, 70%);
+  --color-input-border-focus: var(--color-accent);
+  --color-input-shadow-focus: var(--color-accent);
+  --color-input-border-error: hsl(348, 100%, 37%);
+  --color-input-shadow-error: var(--color-input-border-error);
+  --color-input-subelement-bg-focus: hsl(0, 0%, 90%);
+
+  --gradient-bg: linear-gradient(
+    to bottom right,
+    var(--color-accent-lighter),
+    var(--color-accent-darker)
+  );
+}
+
+@mixin button-override($button-type: primary) {
+  --color-button: var(--color-button-#{$button-type});
+  --color-button-active: var(--color-button-#{$button-type}-active);
+  --color-button-hover: var(--color-button-#{$button-type}-hover);
+  --color-button-text: var(--color-button-#{$button-type}-text);
+}
