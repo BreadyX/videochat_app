@@ -1,0 +1,15 @@
+@use '@/scss/globals';
+
+%button {
+  font-size: inherit;
+  font-weight: var(--text-semibold);
+  padding: var(--space-xs) var(--space-m);
+
+  border-style: solid;
+  border-width: 1px;
+  border-radius: var(--radius-element);
+
+  cursor: pointer;
+
+  transition-duration: var(--transition-speed);
+}

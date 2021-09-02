@@ -1,0 +1,7 @@
+@use '@/scss/globals';
+
+@mixin container-decoration($cssVar: --radius-element) {
+  border-radius: var($cssVar);
+  border: 1px solid var(--color-container-border);
+  box-shadow: 0 0 10px var(--color-shadow);
+}
