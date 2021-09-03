@@ -1,8 +1,17 @@
 import { createRouter, createWebHistory } from 'vue-router';
 
+import NotFound from '@/views/NotFound.vue';
 import Signin from '@/views/Signin.vue';
 
 const routes = [
+  {
+    path: '/:pathMatch(.*)*',
+    name: '404',
+    component: NotFound,
+    meta: {
+      title: '404'
+    }
+  },
   {
     path: '/signin',
     name: 'signin',
