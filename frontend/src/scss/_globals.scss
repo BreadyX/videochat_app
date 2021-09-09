@@ -39,3 +39,9 @@
     color: var(--color-text-secondary);
   }
 }
+
+.clearfix::after {
+  content: '';
+  clear: both;
+  display: table;
+}
