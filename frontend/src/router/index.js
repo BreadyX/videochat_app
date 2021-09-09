@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router';
 
 import NotFound from '@/views/NotFound.vue';
+import Home from '@/views/Home.vue';
 import Signin from '@/views/Signin.vue';
 
 const routes = [
@@ -11,6 +12,11 @@ const routes = [
     meta: {
       title: '404'
     }
+  },
+  {
+    path: '/',
+    name: 'home',
+    component: Home
   },
   {
     path: '/signin',
